@@ -42,10 +42,10 @@ jobs:
           cd $GITHUB_WORKSPACE/master
           chmod +x gradlew
 
-      - name: Build Plugins
+    - name: Build Plugins
         run: |
           cd $GITHUB_WORKSPACE/master
-          ./gradlew make
+          ./gradlew make --stacktrace --info
 
       - name: Move artifacts to builds
         run: |
