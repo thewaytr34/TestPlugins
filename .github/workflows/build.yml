@@ -45,7 +45,7 @@ jobs:
       - name: Build Plugins
         run: |
           cd $GITHUB_WORKSPACE/master
-          ./gradlew makePlugins json
+          ./gradlew make
 
       - name: Move artifacts to builds
         run: |
